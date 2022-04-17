@@ -1,0 +1,126 @@
+{% extends './structure.html' %}
+{% block title %}Quienes somos{% endblock %}
+{% block body %}
+
+    <header>
+        <div class="container-fluid">           
+            <div class="row">              
+                <ul class="nav nav-tabs justify-content-md-center bg-dark p-3">           
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{url_for('index')}}"><span class="material-icons">
+                        home
+                        </span></a>
+                    </li>                   
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 text-white" href="{{url_for('index')}}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 active" href="{{url_for('quienesSomos')}}">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 text-white" href="{{url_for('habitaciones')}}">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white" href="{{url_for('contactenos')}}">Contactenos</a>
+                    </li>                        
+                </ul>                  
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{{url_for('static',filename = './images/Imagen2.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{url_for('static',filename = './images/Imagen3.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{url_for('static',filename = './images/Imagen4.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-3 cards" style="max-width: 740px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="{{url_for('static',filename = './images/Imagen5.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Mision</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam porro consequuntur dignissimos, accusantium reiciendis, expedita aliquam id a eveniet perspiciatis molestias iste placeat? Dolores vel dignissimos quasi at provident?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card mb-3 mt-3 cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="{{url_for('static',filename = './images/Imagen6.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Vision</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam porro consequuntur dignissimos, accusantium reiciendis, expedita aliquam id a eveniet perspiciatis molestias iste placeat? Dolores vel dignissimos quasi at provident?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="card mb-3 mt-3 cards" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                            <img src="{{url_for('static',filename = './images/Imagen7.jpg')}}" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Valores</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates veniam porro consequuntur dignissimos, accusantium reiciendis, expedita aliquam id a eveniet perspiciatis molestias iste placeat? Dolores vel dignissimos quasi at provident?</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark mt-3">
+        <div class="container">
+            <div class="row p-5 justify-content-md-center">
+                <div class="col-12 col-md-6 text-white text-end">
+                    <p><i class="fas fa-user-tie mx-2"></i>Jhon Jairo Sanchez</p>
+                    <p><i class="fas fa-city mx-2"></i>Medellín - Colombia</p>
+                    <p><i class="fas fa-envelope-square mx-2"></i>iroh314@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 border-start">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square iconos fa-3x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram iconos fa-3x"></i></a>
+                    <a href="https://co.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in iconos fa-3x"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+{% endblock %}

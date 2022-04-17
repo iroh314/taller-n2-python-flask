@@ -1,0 +1,17 @@
+.imagenIndex{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5rem;
+    border: double;
+    height: 450px;
+    width: 100%;  
+}
+
+.cards{
+  
+  margin-left: auto;
+  margin-right: auto;
+  border:dashed;  
+}

@@ -1,0 +1,31 @@
+{% extends './structure.html' %}
+{% block title %}Habitaciones{% endblock %}
+{% block body %}
+
+    <header>
+        <div class="container-fluid">           
+            <div class="row">              
+                <ul class="nav nav-tabs justify-content-md-center bg-dark p-3">           
+                    <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="{{url_for('index')}}"><span class="material-icons">
+                        home
+                        </span></a>
+                    </li>                   
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 text-white" href="{{url_for('index')}}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 text-white" href="{{url_for('quienesSomos')}}">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link mx-3 active" href="{{url_for('habitaciones')}}">Habitaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3 text-white" href="{{url_for('contactenos')}}">Contactenos</a>
+                    </li>                        
+                </ul>                  
+            </div>
+        </div>
+    </header>
+
+{% endblock %}
