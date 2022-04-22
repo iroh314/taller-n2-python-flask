@@ -28,4 +28,88 @@
         </div>
     </header>
 
+    <main>
+        <div class="row">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{{url_for('static',filename = './images/Imagen8.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{url_for('static',filename = './images/Imagen9.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{{url_for('static',filename = './images/Imagen10.jpg')}}" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    <h2 class="registro mt-3 text-center">Formulario de contacto</h2>
+      <div class="container mt-3">
+        <div class="row d-flex justify-content-center mt-3"> 
+          <div class="col-12 col-md-8">             
+            <form class="row g-3 needs-validation" novalidate>  
+              <div class="col-md-6">
+                <label for="validationCustom01" class="form-label">Ingrese su nombre</label>
+                <input type="text" class="form-control" id="validationCustom01">
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Ingrese sus apellidos</label>
+                <input type="text" class="form-control" id="validationCustom02" value="" required>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustomUsername" class="form-label">Ingrese su e-mail</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend"><i class="fas fa-envelope-square"></i></span>
+                  <input type="email" class="form-control" id="email" name="email">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>             
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepte términos y condiciones.
+                  </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </div>
+            </form>          
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark mt-3">
+        <div class="container">
+            <div class="row p-5 justify-content-md-center">
+                <div class="col-12 col-md-6 text-white text-end">
+                    <p><i class="fas fa-user-tie mx-2"></i>Jhon Jairo Sanchez</p>
+                    <p><i class="fas fa-city mx-2"></i>Medellín - Colombia</p>
+                    <p><i class="fas fa-envelope-square mx-2"></i>iroh314@gmail.com</p>
+                </div>
+                <div class="col-12 col-md-6 border-start">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square iconos fa-3x"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram iconos fa-3x"></i></a>
+                    <a href="https://co.linkedin.com/" target="_blank"><i class="fab fa-linkedin-in iconos fa-3x"></i></a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
 {% endblock %}
