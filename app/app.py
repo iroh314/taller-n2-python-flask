@@ -12,7 +12,7 @@ def quienesSomos():
 
 @app.route('/habitaciones')
 def habitaciones():
-    diccionario = [{'Ciudad':'Medellín', 'Dirección':'Calle 67 # 56-10', 'Nro Habitaciones':3, 'Precio':150000},{'Ciudad':'Cartagena', 'Dirección':'Carrera 34 # 23-10', 'Nro Habitaciones':2, 'Precio':180000},{'Ciudad':'Santa Marta', 'Dirección':'Calle 78 # 45-47', 'Nro Habitaciones':4, 'Precio':160000}]
+    diccionario = [{'ciudad':'Medellín', 'direccion':'Calle 67 # 56-10', 'nroHabitaciones':3, 'precio':150000},{'ciudad':'Cartagena', 'dirección':'Carrera 34 # 23-10', 'nroHabitaciones':2, 'precio':180000},{'ciudad':'Santa Marta', 'dirección':'Calle 78 # 45-47', 'nroHabitaciones':4, 'precio':160000}]
     return render_template('habitaciones.html', datos = diccionario)
 
 @app.route('/contactenos')
